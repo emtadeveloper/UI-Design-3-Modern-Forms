@@ -1,3 +1,4 @@
+@import "./variable.scss";
 // ===========  mixin ========
 
 @mixin flex(
@@ -32,4 +33,15 @@
   right: $right;
   bottom: $bottom;
   left: $left;
+}
+
+@mixin width-height($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin font-style($fontSize, $fontColor, $fontWeight) {
+  font-size: $fontSize;
+  color: $fontColor;
+  font-weight: $fontWeight;
 }
