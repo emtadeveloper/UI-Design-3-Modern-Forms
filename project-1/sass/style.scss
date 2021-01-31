@@ -1,0 +1,187 @@
+@import "./extends.scss";
+@import "./mixin.scss";
+@import "./reset.scss";
+@import "./variable.scss";
+
+.container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  .shape1 {
+    @extend .shape;
+    opacity: 0.5;
+    @include position-absolute(null, -7rem, null, null, -3.5rem);
+    background: linear-gradient(
+      180deg,
+      $first-color 0%,
+      rgba(196, 196, 196, 0) 100%
+    );
+  }
+  .shape2 {
+    @extend .shape;
+    @include position-absolute(null, null, -5.5rem, -6rem, null);
+    opacity: 0.5;
+    background: linear-gradient(
+      180deg,
+      $first-color 0%,
+      rgba(196, 196, 196, 0) 100%
+    );
+    transform: rotate(180deg);
+  }
+  .form {
+    height: 100vh;
+    @include flex();
+    .form-img {
+      display: none;
+    }
+    .form-content {
+      width: 290px;
+      .content-title {
+        font-size: $big-font-size;
+        font-weight: 500;
+        @include margin-padding(true, null, null, 4rem, null);
+      }
+      .content-body {
+        @include margin-padding(true, null, null, 1.5rem, null);
+        .field {
+          position: relative;
+          @include flex(flex, row, null, null);
+          @include margin-padding(true, null, null, 2.5rem, null);
+          @include margin-padding(false, 0.25rem, null, 0.25rem, null);
+          border-bottom: 1px solid $text-color;
+          .field-icon {
+            font-size: 1.5rem;
+            color: $text-color;
+            transition: 0.3s;
+          }
+          .field-container {
+            .field-label {
+              display: block;
+              direction: rtl;
+              @include position-absolute(absolute, 0.45rem, 2rem, null, null);
+              font-size: $normal-font-size;
+              color: $text-color;
+              transition: 0.3s;
+            }
+            .field-input {
+              @include position-absolute(absolute, 0, 20px, null, null);
+              font-family: $body-font;
+              width: 80%;
+              height: 100%;
+              border: none;
+              outline: none;
+              background: none;
+              @include margin-padding(false, 0.5rem, 0.75rem, 0.5rem, 0.75rem);
+              font-size: 1.2rem;
+              color: $first-color;
+              transition: 0.3s;
+            }
+          }
+        }
+        .field.focus {
+          border-bottom: 1px solid $first-color;
+          .field-icon {
+            color: $first-color;
+          }
+          .field-label {
+            top: -1.5rem;
+            font-size: 0.875rem;
+            color: $first-color;
+          }
+        }
+      }
+      .content-footer {
+        .form-forget {
+          display: block;
+          text-align: right;
+          @include margin-padding(true, null, null, 2rem, null);
+          font-size: $normal-font-size;
+          color: $text-color;
+          font-weight: 500;
+          transition: 0.5s;
+          &:hover {
+            color: $first-color;
+            transition: 0.5s;
+          }
+        }
+        .form-button {
+          font-family: $body-font;
+          width: 100%;
+          @include margin-padding(true, null, null, 3rem, null);
+          @include margin-padding(false, 1rem, 1rem, 1rem, 1rem);
+          font-size: $normal-font-size;
+          outline: none;
+          border: none;
+          background-color: $first-color;
+          color: #fff;
+          border-radius: 0.5rem;
+          cursor: pointer;
+          transition: 0.05s;
+          &:active {
+            transform: scale(1.1);
+          }
+          &:hover {
+            box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.15);
+          }
+        }
+        .form-social {
+          @include flex(flex, row, center, space-between);
+          .form-social-text {
+            display: inline-block;
+            width: 80px;
+            text-align: center;
+            font-size: 18px;
+          }
+          .form-icon {
+            .form-social-icon {
+              @include flex(inline-flex, row, center, center);
+              width: 30px;
+              height: 30px;
+              @include margin-padding(false, 0.5rem, 0.5rem, 0.5rem, 0.5rem);
+              @include margin-padding(true, null, 1rem, null, null);
+              background-color: $text-color;
+              color: #fff;
+              font-size: 1.25rem;
+              border-radius: 50%;
+              transition: 0.3s;
+              &:active {
+                transform: scale(1.2);
+              }
+              &:hover {
+                background-color: $first-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// =================== responsive style ===============
+
+@media screen and (min-width: 968px) {
+  .container {
+    .shape1 {
+      width: 400px;
+      height: 400px;
+      @include position-absolute(null, -11rem, null, null, -6.5rem);
+    }
+    .shape2 {
+      width: 300px;
+      height: 300px;
+      @include position-absolute(null, null, -6.5rem, null, null);
+    }
+    .form {
+      @include margin-padding(false, 0, 2rem, 0, 2rem);
+      .form-content {
+        @include margin-padding(yes, 125px, 125px, 125px, 125px);
+        width: 320px;
+      }
+      .form-img {
+        display: block;
+        width: 700px;
+      }
+    }
+  }
+}

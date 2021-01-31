@@ -1,0 +1,13 @@
+//  variable typographi and color
+
+$first-color: #12192c;
+$text-color: #8590ad;
+$body-font: Vazir-Medium;
+$big-font-size: 2rem;
+$smaller-font-size: 0.875rem;
+$normal-font-size: 0.938rem;
+
+@media screen and(min-width:768px) {
+  $big-font-size: 2.5rem;
+  $smaller-font-size: 1rem;
+}

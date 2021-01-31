@@ -1,0 +1,35 @@
+// ===========  mixin ========
+
+@mixin flex(
+  $flex: flex,
+  $flex-direction: row-reverse,
+  $alignItem: center,
+  $justifyContent: center
+) {
+  display: $flex;
+  flex-direction: $flex-direction;
+  align-items: $alignItem;
+  justify-content: $justifyContent;
+}
+
+@mixin margin-padding($margin-padding, $top, $right, $bottom, $left) {
+  @if $margin-padding {
+    margin-top: $top;
+    margin-right: $right;
+    margin-bottom: $bottom;
+    margin-left: $left;
+  } @else {
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+  }
+}
+
+@mixin position-absolute($postion, $top, $right, $bottom, $left) {
+  position: $postion;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}

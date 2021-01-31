@@ -1,0 +1,189 @@
+.shape, .container .shape1, .container .shape2 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; }
+
+@font-face {
+  font-family: Vazir-Medium;
+  src: url(../fonts/Vazir-Bold.eot) format("eot"), url(../fonts/Vazir-Medium.woff) format("woff"), url(../fonts/Vazir-Medium.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Vazir-Medium;
+  color: #12192c;
+  box-sizing: border-box; }
+  body a {
+    text-decoration: none; }
+  body img {
+    display: block;
+    max-width: 100%;
+    height: auto; }
+
+.container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden; }
+  .container .shape1 {
+    opacity: 0.5;
+    top: -7rem;
+    left: -3.5rem;
+    background: linear-gradient(180deg, #12192c 0%, rgba(196, 196, 196, 0) 100%); }
+  .container .shape2 {
+    right: -5.5rem;
+    bottom: -6rem;
+    opacity: 0.5;
+    background: linear-gradient(180deg, #12192c 0%, rgba(196, 196, 196, 0) 100%);
+    transform: rotate(180deg); }
+  .container .form {
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center; }
+    .container .form .form-img {
+      display: none; }
+    .container .form .form-content {
+      width: 290px; }
+      .container .form .form-content .content-title {
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 4rem; }
+      .container .form .form-content .content-body {
+        margin-bottom: 1.5rem; }
+        .container .form .form-content .content-body .field {
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 2.5rem;
+          padding-top: 0.25rem;
+          padding-bottom: 0.25rem;
+          border-bottom: 1px solid #8590ad; }
+          .container .form .form-content .content-body .field .field-icon {
+            font-size: 1.5rem;
+            color: #8590ad;
+            transition: 0.3s; }
+          .container .form .form-content .content-body .field .field-container .field-label {
+            display: block;
+            direction: rtl;
+            position: absolute;
+            top: 0.45rem;
+            right: 2rem;
+            font-size: 0.938rem;
+            color: #8590ad;
+            transition: 0.3s; }
+          .container .form .form-content .content-body .field .field-container .field-input {
+            position: absolute;
+            top: 0;
+            right: 20px;
+            font-family: Vazir-Medium;
+            width: 80%;
+            height: 100%;
+            border: none;
+            outline: none;
+            background: none;
+            padding-top: 0.5rem;
+            padding-right: 0.75rem;
+            padding-bottom: 0.5rem;
+            padding-left: 0.75rem;
+            font-size: 1.2rem;
+            color: #12192c;
+            transition: 0.3s; }
+        .container .form .form-content .content-body .field.focus {
+          border-bottom: 1px solid #12192c; }
+          .container .form .form-content .content-body .field.focus .field-icon {
+            color: #12192c; }
+          .container .form .form-content .content-body .field.focus .field-label {
+            top: -1.5rem;
+            font-size: 0.875rem;
+            color: #12192c; }
+      .container .form .form-content .content-footer .form-forget {
+        display: block;
+        text-align: right;
+        margin-bottom: 2rem;
+        font-size: 0.938rem;
+        color: #8590ad;
+        font-weight: 500;
+        transition: 0.5s; }
+        .container .form .form-content .content-footer .form-forget:hover {
+          color: #12192c;
+          transition: 0.5s; }
+      .container .form .form-content .content-footer .form-button {
+        font-family: Vazir-Medium;
+        width: 100%;
+        margin-bottom: 3rem;
+        padding-top: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        font-size: 0.938rem;
+        outline: none;
+        border: none;
+        background-color: #12192c;
+        color: #fff;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: 0.05s; }
+        .container .form .form-content .content-footer .form-button:active {
+          transform: scale(1.1); }
+        .container .form .form-content .content-footer .form-button:hover {
+          box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.15); }
+      .container .form .form-content .content-footer .form-social {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between; }
+        .container .form .form-content .content-footer .form-social .form-social-text {
+          display: inline-block;
+          width: 80px;
+          text-align: center;
+          font-size: 18px; }
+        .container .form .form-content .content-footer .form-social .form-icon .form-social-icon {
+          display: inline-flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          width: 30px;
+          height: 30px;
+          padding-top: 0.5rem;
+          padding-right: 0.5rem;
+          padding-bottom: 0.5rem;
+          padding-left: 0.5rem;
+          margin-right: 1rem;
+          background-color: #8590ad;
+          color: #fff;
+          font-size: 1.25rem;
+          border-radius: 50%;
+          transition: 0.3s; }
+          .container .form .form-content .content-footer .form-social .form-icon .form-social-icon:active {
+            transform: scale(1.2); }
+          .container .form .form-content .content-footer .form-social .form-icon .form-social-icon:hover {
+            background-color: #12192c; }
+
+@media screen and (min-width: 968px) {
+  .container .shape1 {
+    width: 400px;
+    height: 400px;
+    top: -11rem;
+    left: -6.5rem; }
+  .container .shape2 {
+    width: 300px;
+    height: 300px;
+    right: -6.5rem; }
+  .container .form {
+    padding-top: 0;
+    padding-right: 2rem;
+    padding-bottom: 0;
+    padding-left: 2rem; }
+    .container .form .form-content {
+      margin-top: 125px;
+      margin-right: 125px;
+      margin-bottom: 125px;
+      margin-left: 125px;
+      width: 320px; }
+    .container .form .form-img {
+      display: block;
+      width: 700px; } }

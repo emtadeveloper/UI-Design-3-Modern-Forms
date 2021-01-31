@@ -1,0 +1,29 @@
+// ============= reset for Project  ====================
+@import "./variable.scss";
+@font-face {
+  font-family: Vazir-Medium;
+  src: url(../fonts/Vazir-Bold.eot) format("eot"),
+    url(../fonts/Vazir-Medium.woff) format("woff"),
+    url(../fonts/Vazir-Medium.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $body-font;
+  color: $first-color;
+  box-sizing: border-box;
+  a {
+    text-decoration: none;
+  }
+
+  // for responsive image
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
