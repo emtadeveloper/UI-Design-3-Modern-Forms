@@ -1,0 +1,26 @@
+{
+  "name": "web-ui-design-7-modern-forms",
+  "version": "1.0.0",
+  "description": "طراحی 7 فرم حرفه ای و مدرن با استفاده از    HTML  /  CSS  / SASS  / PUG  / GULP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emtadeveloper/Web-Ui-Design-7-Modern-Forms.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emtadeveloper/Web-Ui-Design-7-Modern-Forms/issues"
+  },
+  "homepage": "https://github.com/emtadeveloper/Web-Ui-Design-7-Modern-Forms#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-pug": "^4.0.1"
+  },
+  "dependencies": {
+    "gulp-sass": "^4.1.0"
+  }
+}
