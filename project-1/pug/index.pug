@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+html(lang="fa",dir="rtl")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Project-1
+        link(rel="stylesheet", href="../css/style.css")
+        link(rel="stylesheet", href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css')
+    body
+      section.container
+        section.shape1
+        section.shape2
+        section.form
+          img(src="../img/image_project_1.svg" alt="" class="form-img")
+          form(action="" class="form-content")
+            h1(class="content-title") خوش آمدید
+            section.content-body
+              div.field
+                 div.field-icon 
+                    i.bx.bx-user-circle
+                 div.field-container 
+                    label(class="field-label") نام کاربری
+                    input(type="text" class="field-input")
+              div.field
+                 div.field-icon 
+                    i.bx.bx-lock
+                 div.field-container 
+                    label(class="field-label") رمز عبور
+                    input(type="password" class="field-input")
+            section.content-footer
+              a(href="#" class="form-forget") فراموشی رمز عبور
+              input(type="submit" class="form-button" value="ورود")
+              div.form-social
+                 span.form-social-text  ورود با
+                 div.form-icon
+                    a(href="" class="form-social-icon")
+                      i.bx.bxl-facebook
+                    a(href="" class="form-social-icon")
+                      i.bx.bxl-google
+                    a(href="" class="form-social-icon")
+                      i.bx.bxl-instagram
+    script(src='../js/Project-1.js')
+              
