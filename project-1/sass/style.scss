@@ -35,11 +35,21 @@
       display: none;
     }
     .form-content {
+      position: relative;
       width: 290px;
       .content-title {
+        
         font-size: $big-font-size;
         font-weight: 500;
         @include margin-padding(true, null, null, 4rem, null);
+      }
+      span.title {
+        position: absolute;
+        top: 6rem;
+        opacity: .75;
+        background-color:$first-color;
+        width: 175px;
+        height: 3px;
       }
       .content-body {
         @include margin-padding(true, null, null, 1.5rem, null);
