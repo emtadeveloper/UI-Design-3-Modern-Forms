@@ -1,0 +1,86 @@
+@import "./variable.scss";
+@import "./mixin.scss";
+
+.login-registre-create {
+  width: 100%;
+  background-color: $first-color-lighten;
+  @include margin-padding(false, 2rem, 1rem, 2rem, 1rem);
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(35, 0, 77, 0.2);
+  animation-duration: 0.4s;
+  animation-name: animate-login;
+}
+
+@keyframes animate-login {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.login-title {
+  @include font-style($h1-font-size, rgba(0, 0, 0, 0.7), null);
+  margin-bottom: 1.5rem;
+}
+.login-box {
+  @include flex(flex, null, null, space-between);
+  @include margin-padding(false, 1.125rem, 1rem, 1.125rem, 1rem);
+  background-color: #fff;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+}
+.login-icon {
+  font-size: 1.5rem;
+  color: $first-color;
+  text-align: right;
+  width: 15%;
+}
+.login-input {
+  font-family: $body-font;
+  border: none;
+  outline: none;
+  font-size: $normal-font-size;
+  font-weight: 700;
+  color: $first-color-dark;
+  width: 85%;
+}
+
+.login-button {
+  display: block;
+  padding: 1rem;
+  margin: 2rem 0;
+  background-color: $first-color;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+
+.login-forget {
+  display: block;
+  width: max-content;
+  padding-right: 5px;
+  margin-top: 1rem;
+  font-size: $small-font-size;
+  font-weight: 600;
+  color: $first-color-light;
+}
+
+.login-account-signin-signup {
+  font-weight: 600;
+  font-size: $small-font-size;
+}
+
+.block {
+  display: block;
+}
+
+.none {
+  display: none;
+}
