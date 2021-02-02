@@ -1,0 +1,150 @@
+@import "./reset.scss";
+@import "./variable.scss";
+@import "./extends.scss";
+@import "./mixin.scss";
+
+.login {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  .login-forms {
+    .login-registre {
+      @extend .login-registre-create;
+      .login-box {
+        @extend .login-box;
+        .login-icon {
+          @extend .login-icon;
+        }
+        .login-input {
+          @extend .login-input;
+        }
+      }
+      .login-forget {
+        @extend .login-forget;
+      }
+      .login-button {
+        @extend .login-button;
+        &:active {
+          transform: scale(1.1);
+        }
+        &:hover {
+          background-color: $first-color-dark;
+        }
+      }
+      div {
+        margin-bottom: 1.5rem;
+        .login-account {
+          color:rgba(0,0,0,.7);
+          @extend .login-account-signin-signup;
+        }
+        .login-signin {
+            color:rgba(0,0,0,.4);
+          cursor: pointer;
+          @extend .login-account-signin-signup;
+        }
+      }
+    }
+    .login-create {
+      @extend .login-registre-create;
+      .login-box {
+        @extend .login-box;
+        .login-icon {
+          @extend .login-icon;
+        }
+        .login-input {
+          @extend .login-input;
+        }
+      }
+      .login-button {
+        @extend .login-button;
+        &:active {
+          transform: scale(1.1);
+        }
+        &:hover {
+          background-color: $first-color-dark;
+        }
+      }
+      div {
+        .login-account {
+          color: $first-color-dark;
+          @extend .login-account-signin-signup;
+        }
+        .login-signup {
+          color: $first-color;
+          cursor: pointer;
+          @extend .login-account-signin-signup;
+        }
+      }
+      div.login-socail {
+        margin-top: 2rem;
+        .login-social-icon {
+          font-size: 1.5rem;
+          color: $first-color-dark;
+          margin: 0 1.5rem;
+        }
+      }
+    }
+  }
+}
+/* ===== MEDIA QUERIES =====*/
+
+@media screen and (max-width: 1023px) {
+  .login {
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    .login-content {
+      position: sticky;
+      top:5%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      z-index: 0;
+      .login-img {
+        img {
+          width: 280px;
+          height: 280px;
+        }
+      }
+    }
+    .login-forms {
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 350px;
+      bottom: 5%;
+      position: sticky;
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .login {
+    justify-content: center;
+    flex-direction: row-reverse;
+    .login-content {
+      display: flex;
+      justify-content: center;
+      justify-content: flex-end;
+      background-color: #f2f2f2;
+      align-items: center;
+      border-radius: 2.5%;
+      height: 580px;
+      width: 620px;
+      .login-img {
+        img {
+          margin: 20px;
+          width: 400px;
+          height: 400px;
+        }
+      }
+    }
+    .login-forms {
+      width: 300px;
+      margin-left: -9rem;
+    }
+  }
+}

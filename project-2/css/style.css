@@ -1,0 +1,193 @@
+/*===== Colores =====*/
+/*===== Font and typography =====*/
+@font-face {
+  font-family: Vazir-Medium;
+  src: url(../fonts/Vazir-Bold.eot) format("eot"), url(../fonts/Vazir-Medium.woff) format("woff"), url(../fonts/Vazir-Medium.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Vazir-Medium;
+  font-size: 0.938rem;
+  color: #536dfe;
+  box-sizing: border-box; }
+  body h1 {
+    margin: 0; }
+  body a {
+    text-decoration: none; }
+  body img {
+    max-width: 100%;
+    height: auto;
+    display: block; }
+
+/*===== Colores =====*/
+/*===== Font and typography =====*/
+/*===== Colores =====*/
+/*===== Font and typography =====*/
+/*===== Colores =====*/
+/*===== Font and typography =====*/
+.login-registre-create, .login .login-forms .login-registre, .login .login-forms .login-create {
+  width: 100%;
+  background-color: #f2f2f2;
+  padding-top: 2rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(35, 0, 77, 0.2);
+  animation-duration: 0.4s;
+  animation-name: animate-login; }
+
+@keyframes animate-login {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(1.1, 1.1); }
+  100% {
+    transform: scale(1, 1); } }
+
+.login-title {
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 1.5rem; }
+
+.login-box, .login .login-forms .login-registre .login-box, .login .login-forms .login-create .login-box {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.125rem;
+  padding-right: 1rem;
+  padding-bottom: 1.125rem;
+  padding-left: 1rem;
+  background-color: #fff;
+  margin-top: 1rem;
+  border-radius: 0.5rem; }
+
+.login-icon, .login .login-forms .login-registre .login-box .login-icon, .login .login-forms .login-create .login-box .login-icon {
+  font-size: 1.5rem;
+  color: #00aeff;
+  text-align: right;
+  width: 15%; }
+
+.login-input, .login .login-forms .login-registre .login-box .login-input, .login .login-forms .login-create .login-box .login-input {
+  font-family: Vazir-Medium;
+  border: none;
+  outline: none;
+  font-size: 0.938rem;
+  font-weight: 700;
+  color: #536dfe;
+  width: 85%; }
+
+.login-button, .login .login-forms .login-registre .login-button, .login .login-forms .login-create .login-button {
+  display: block;
+  padding: 1rem;
+  margin: 2rem 0;
+  background-color: #00aeff;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 0.5rem;
+  transition: 0.3s; }
+
+.login-forget, .login .login-forms .login-registre .login-forget {
+  display: block;
+  width: max-content;
+  padding-right: 5px;
+  margin-top: 1rem;
+  font-size: 0.813rem;
+  font-weight: 600;
+  color: #a49eac; }
+
+.login-account-signin-signup, .login .login-forms .login-registre div .login-account, .login .login-forms .login-registre div .login-signin, .login .login-forms .login-create div .login-account, .login .login-forms .login-create div .login-signup {
+  font-weight: 600;
+  font-size: 0.813rem; }
+
+.block {
+  display: block; }
+
+.none {
+  display: none; }
+
+/*===== Colores =====*/
+/*===== Font and typography =====*/
+.login {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 100vw;
+  height: 100vh; }
+  .login .login-forms .login-registre .login-button:active {
+    transform: scale(1.1); }
+  .login .login-forms .login-registre .login-button:hover {
+    background-color: #536dfe; }
+  .login .login-forms .login-registre div {
+    margin-bottom: 1.5rem; }
+    .login .login-forms .login-registre div .login-account {
+      color: rgba(0, 0, 0, 0.7); }
+    .login .login-forms .login-registre div .login-signin {
+      color: rgba(0, 0, 0, 0.4);
+      cursor: pointer; }
+  .login .login-forms .login-create .login-button:active {
+    transform: scale(1.1); }
+  .login .login-forms .login-create .login-button:hover {
+    background-color: #536dfe; }
+  .login .login-forms .login-create div .login-account {
+    color: #536dfe; }
+  .login .login-forms .login-create div .login-signup {
+    color: #00aeff;
+    cursor: pointer; }
+  .login .login-forms .login-create div.login-socail {
+    margin-top: 2rem; }
+    .login .login-forms .login-create div.login-socail .login-social-icon {
+      font-size: 1.5rem;
+      color: #536dfe;
+      margin: 0 1.5rem; }
+
+/* ===== MEDIA QUERIES =====*/
+@media screen and (max-width: 1023px) {
+  .login {
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh; }
+    .login .login-content {
+      position: sticky;
+      top: 5%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      z-index: 0; }
+      .login .login-content .login-img img {
+        width: 280px;
+        height: 280px; }
+    .login .login-forms {
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 350px;
+      bottom: 5%;
+      position: sticky; } }
+
+@media screen and (min-width: 1024px) {
+  .login {
+    justify-content: center;
+    flex-direction: row-reverse; }
+    .login .login-content {
+      display: flex;
+      justify-content: center;
+      justify-content: flex-end;
+      background-color: #f2f2f2;
+      align-items: center;
+      border-radius: 2.5%;
+      height: 580px;
+      width: 620px; }
+      .login .login-content .login-img img {
+        margin: 20px;
+        width: 400px;
+        height: 400px; }
+    .login .login-forms {
+      width: 300px;
+      margin-left: -9rem; } }
