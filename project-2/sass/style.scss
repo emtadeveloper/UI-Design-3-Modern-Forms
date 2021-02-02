@@ -68,11 +68,11 @@
       }
       div {
         .login-account {
-          color: $first-color-dark;
+          color:rgba(0,0,0,.7);
           @extend .login-account-signin-signup;
         }
         .login-signup {
-          color: $first-color;
+          color:rgba(0,0,0,.4);
           cursor: pointer;
           @extend .login-account-signin-signup;
         }

@@ -77,7 +77,7 @@ body {
   outline: none;
   font-size: 0.938rem;
   font-weight: 700;
-  color: #536dfe;
+  color: rgba(0, 0, 0, 0.7);
   width: 85%; }
 
 .login-button, .login .login-forms .login-registre .login-button, .login .login-forms .login-create .login-button {
@@ -134,9 +134,9 @@ body {
   .login .login-forms .login-create .login-button:hover {
     background-color: #536dfe; }
   .login .login-forms .login-create div .login-account {
-    color: #536dfe; }
+    color: rgba(0, 0, 0, 0.7); }
   .login .login-forms .login-create div .login-signup {
-    color: #00aeff;
+    color: rgba(0, 0, 0, 0.4);
     cursor: pointer; }
   .login .login-forms .login-create div.login-socail {
     margin-top: 2rem; }
