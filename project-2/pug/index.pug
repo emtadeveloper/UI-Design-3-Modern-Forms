@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+html(lang="fa" dir="rtl")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title project-2
+        link(href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet')
+        link(rel="stylesheet" href="./style.css")
+    body
+       section.login 
+          section.login-content
+            section.login-img
+               img(src="./img-login.svg")             
+          section.login-forms 
+               form(action="" class="login-registre" id="login-in")
+                  h1.login-title ورود
+                  div.login-box 
+                     i.bx.bx-user.login-icon
+                     input(type="text" placeholder="نام کاربری" class="login-input")                     
+                  div.login-box 
+                     i.bx.bx-lock-alt.login-icon
+                     input(type="password" placeholder="رمز عبور" class="login-input")
+                  a(href="#" class="login-forget") فراموشی رمز عبور ؟  
+                  a(href="#" class="login-button" id="emad")  ورود
+                  div 
+                    span.login-account آیا حساب کاربری دارید ؟
+                    span(class="login-signin" id="sign-up")  ساخت حساب
+               form(action="" class="login-create none" id="login-up")
+                   h1.login-title ساخت حساب 
+                   div.login-box 
+                      i.bx.bx-user.login-icon
+                      input(type="text" placeholder="نام کاربری" class="login-input")
+                   div.login-box 
+                      i.bx.bx-at.login-icon
+                      input(type="Email" placeholder="ایمیل" class="login-input")
+                   div.login-box 
+                      i.bx.bx-lock-alt.login-icon
+                      input(type="password" placeholder="رمز عبور" class="login-input")
+                   a(href="#" class="login-button" )   ساخت حساب 
+                   div 
+                     span(class="login-account") آیا در حال حاضر حسابی دارید ؟
+                     span(class="login-signup" id="sign-in")   ورود
+                   div.login-socail 
+                     a(href="#" class="login-social-icon")
+                        i(class='bx bxl-facebook')  
+                     a(href="#" class="login-social-icon")
+                        i(class='bx bxl-twitter')  
+                     a(href="#" class="login-social-icon")
+                        i(class='bx bxl-google')  
+    script(src="./main.js")
+
+                 
+
