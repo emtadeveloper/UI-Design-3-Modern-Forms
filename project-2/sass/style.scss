@@ -4,11 +4,11 @@
 @import "./mixin.scss";
 
 .login {
-    display: flex;
-    position: relative;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
   .login-forms {
     .login-registre {
       @extend .login-registre-create;
@@ -36,11 +36,11 @@
       div {
         margin-bottom: 1.5rem;
         .login-account {
-          color:rgba(0,0,0,.7);
+          color: rgba(0, 0, 0, 0.7);
           @extend .login-account-signin-signup;
         }
         .login-signin {
-            color:rgba(0,0,0,.4);
+          color: rgba(0, 0, 0, 0.4);
           cursor: pointer;
           @extend .login-account-signin-signup;
         }
@@ -68,11 +68,11 @@
       }
       div {
         .login-account {
-          color:rgba(0,0,0,.7);
+          color: rgba(0, 0, 0, 0.7);
           @extend .login-account-signin-signup;
         }
         .login-signup {
-          color:rgba(0,0,0,.4);
+          color: rgba(0, 0, 0, 0.4);
           cursor: pointer;
           @extend .login-account-signin-signup;
         }
@@ -96,8 +96,7 @@
     width: 100vw;
     height: 100vh;
     .login-content {
-      position: sticky;
-      top:5%;
+      margin-bottom: -5rem;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -111,13 +110,12 @@
       }
     }
     .login-forms {
+      padding-bottom: 3.5rem;
       z-index: 1;
       display: flex;
       align-items: center;
       justify-content: center;
       width: 350px;
-      bottom: 5%;
-      position: sticky;
     }
   }
 }

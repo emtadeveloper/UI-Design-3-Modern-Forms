@@ -152,8 +152,7 @@ body {
     width: 100vw;
     height: 100vh; }
     .login .login-content {
-      position: sticky;
-      top: 5%;
+      margin-bottom: -5rem;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -163,13 +162,12 @@ body {
         width: 280px;
         height: 280px; }
     .login .login-forms {
+      padding-bottom: 3.5rem;
       z-index: 1;
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 350px;
-      bottom: 5%;
-      position: sticky; } }
+      width: 350px; } }
 
 @media screen and (min-width: 1024px) {
   .login {
