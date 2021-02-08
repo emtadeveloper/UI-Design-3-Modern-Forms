@@ -1,1 +1,136 @@
 @import "./reset.scss";
+@import "./extends.scss";
+@import "./mixin.scss";
+@import "./responsive.scss";
+@import "./action.scss";
+
+
+.container {
+  @extend .container;
+  .signin-signup {
+    @extend .signin-signup;
+    .sign-up-form {
+      @extend .sign-in-form;
+      div.sign-up {
+        margin-top:5%;
+        @include flex(flex, column, center, center);
+        .title {
+          @extend .title;
+        }
+        .input-field {
+          @extend .input-field;
+          i {
+            @extend .field-i;
+          }
+          input {
+            @extend .field-input;
+          }
+        }
+        div.btn-login {
+          @include flex();
+          width: 350px;
+          padding: 10px;
+          .btn {
+            @extend .btn;
+          }
+        }
+        .socail-media {
+          @extend .socail-media;
+          .socail-text {
+            font-size: 1rem;
+            margin: 0.7rem;
+          }
+          div {
+            @include flex(flex, row-reverse, center, space-around);
+            .socail-icon {
+              @extend .socail-icon;
+            }
+          }
+        }
+      }
+    }
+    .sign-in-form {
+      @extend .sign-in-form;
+      div.sign-in {
+        margin-bottom:5%;
+        @include flex(flex, column, center, center);
+        .title {
+          @extend .title;
+        }
+        .input-field {
+          @extend .input-field;
+          i {
+            @extend .field-i;
+          }
+          input {
+            @extend .field-input;
+          }
+        }
+        div.btn-login {
+          @include flex();
+          width: 350px;
+          padding: 10px;
+          .btn {
+            @extend .btn;
+          }
+        }
+        .socail-media {
+          @extend .socail-media;
+          .socail-text {
+            font-size: 1rem;
+            margin: 0.7rem;
+          }
+          div {
+            @include flex();
+            align-items: center !important;
+            justify-content: center !important;
+            position: relative;
+            .socail-icon {
+              @extend .socail-icon;
+              margin-bottom: 20px;
+              margin-top: 0 !important;
+              padding-top: 0 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .circle {
+    @extend .circle;
+  }
+  div.pannel-right {
+    @extend .pannel;
+    top: 15px;
+    left: 15px;
+    h3 {
+      @extend .pannel-h3;
+    }
+    p {
+      @extend .pannel-p;
+    }
+    button {
+      @extend .pannel-button;
+    }
+  }
+  div.pannel-left {
+    @extend .pannel;
+    top: 15px;
+    right: -45%;
+    h3 {
+      @extend .pannel-h3;
+    }
+    p {
+      @extend .pannel-p;
+    }
+    button {
+      @extend .pannel-button;
+    }
+  }
+  .img-1 {
+    @extend .img-1;
+  }
+  .img-2 {
+    @extend .img-2;
+  }
+}
