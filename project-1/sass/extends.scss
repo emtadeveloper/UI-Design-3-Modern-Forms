@@ -1,10 +1,108 @@
+@import "./variable.scss";
+@import "./mixin.scss";
+
+
+
 // ==== extends  =====
 
 .shape {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-  }
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(
+    180deg,
+    $first-color 0%,
+    rgba(196, 196, 196, 0) 100%
+  );
+  opacity: 0.5;
+}
 
-  
+// =======  content body ======
+
+.field {
+  position: relative;
+  @include flex(flex, row, null, null);
+  @include margin-padding(true, null, null, 2.5rem, null);
+  @include margin-padding(false, 0.25rem, null, 0.25rem, null);
+  border-bottom: 1px solid $text-color;
+}
+.field-label {
+  display: block;
+  direction: rtl;
+  @include position-absolute(absolute, 0.45rem, 2rem, null, null);
+  @include font-style($normal-font-size, $text-color, null);
+}
+.field-input {
+  @include position-absolute(absolute, 0, 20px, null, null);
+  font-family: $body-font;
+  @include width-height(80%, 100%);
+  border: none;
+  outline: none;
+  background: none;
+  @include margin-padding(false, 0.5rem, 0.75rem, 0.5rem, 0.75rem);
+  @include font-style(1.2rem, $first-color, null);
+}
+
+
+// =======  content footer ======
+
+
+.form-forget {
+  display: block;
+  text-align: right;
+  @include margin-padding(true, null, null, 2rem, null);
+  font-size: $normal-font-size;
+  color: $text-color;
+  font-weight: 500;
+  &:hover {
+    color: $first-color;
+  }
+}
+.form-button {
+  font-family: $body-font;
+  @include width-height(100%, null);
+  @include margin-padding(true, null, null, 3rem, null);
+  @include margin-padding(false, 1rem, 1rem, 1rem, 1rem);
+  font-size: $normal-font-size;
+  outline: none;
+  border: none;
+  background-color: $first-color;
+  color: #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.05s;
+  &:active {
+    transform: scale(1.1);
+  }
+  &:hover {
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.15);
+  }
+}
+
+//                    form social
+
+.form-social-text {
+  display: inline-block;
+  @include width-height(80px, null);
+  text-align: center;
+  font-size: 18px;
+}
+.form-social-icon {
+  @include flex(inline-flex, row, center, center);
+  @include width-height(50px, 50px);
+  @include margin-padding(false, 0.5rem, 0.5rem, 0.5rem, 0.5rem);
+  @include margin-padding(true, null, 1rem, null, null);
+  background-color: $text-color;
+  @include font-style(1.25rem, #fff, null);
+  border-radius: 50%;
+  &:active {
+    transform: scale(1.3);
+  }
+  &:hover {
+    background-color: $first-color;
+  }
+  i {
+    color: #fff !important;
+  }
+}

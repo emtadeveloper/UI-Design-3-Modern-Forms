@@ -1,0 +1,25 @@
+// =================== responsive style ===============
+
+@media screen and (min-width: 968px) {
+  .container {
+    .shape1 {
+      @include width-height(400px, 400px);
+      @include position-absolute(null, -11rem, null, null, -6.5rem);
+    }
+    .shape2 {
+      @include width-height(300px, 300px);
+      @include position-absolute(null, null, -6.5rem, null, null);
+    }
+    .form {
+      @include margin-padding(false, 0, 2rem, 0, 2rem);
+      .form-content {
+        @include margin-padding(yes, 125px, 125px, 125px, 125px);
+        @include width-height(320px, null);
+      }
+      .form-img {
+        display: block;
+        @include width-height(700px, null);
+      }
+    }
+  }
+}
