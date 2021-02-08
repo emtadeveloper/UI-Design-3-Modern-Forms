@@ -121,21 +121,19 @@ body {
 /*===== Font and typography =====*/
 .login {
   display: flex;
-  position: relative;
   align-items: center;
+  position: relative;
   width: 100vw;
   height: 100vh; }
   .login .login-forms .login-registre .login-button:active {
     transform: scale(1.1); }
   .login .login-forms .login-registre .login-button:hover {
     background-color: #536dfe; }
-  .login .login-forms .login-registre div {
-    margin-bottom: 1.5rem; }
-    .login .login-forms .login-registre div .login-account {
-      color: rgba(0, 0, 0, 0.7); }
-    .login .login-forms .login-registre div .login-signin {
-      color: rgba(0, 0, 0, 0.4);
-      cursor: pointer; }
+  .login .login-forms .login-registre div .login-account {
+    color: rgba(0, 0, 0, 0.7); }
+  .login .login-forms .login-registre div .login-signin {
+    color: rgba(0, 0, 0, 0.4);
+    cursor: pointer; }
   .login .login-forms .login-create .login-button:active {
     transform: scale(1.1); }
   .login .login-forms .login-create .login-button:hover {
@@ -146,24 +144,29 @@ body {
     color: rgba(0, 0, 0, 0.4);
     cursor: pointer; }
   .login .login-forms .login-create div.login-socail {
-    margin-top: 2rem; }
+    margin-top: 1.5rem; }
     .login .login-forms .login-create div.login-socail .login-social-icon {
       font-size: 1.5rem;
-      color: #536dfe;
+      color: #00aeff;
       margin: 0 1.5rem; }
+    .login .login-forms .login-create div.login-socail :active {
+      transition: 0.4s;
+      color: #536dfe;
+      transform: scale(1.5); }
 
 /* ===== MEDIA QUERIES =====*/
 @media screen and (max-width: 1023px) {
   .login {
+    display: flex;
     flex-direction: column;
-    width: 100vw;
-    height: 100vh; }
+    width: 100%;
+    height: 100%; }
     .login .login-content {
       margin-bottom: -5rem;
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 100%;
+      width: 70%;
       z-index: 0; }
       .login .login-content .login-img img {
         width: 280px;
@@ -174,7 +177,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 350px; } }
+      width: 70%; } }
 
 @media screen and (min-width: 1024px) {
   .login {
@@ -182,17 +185,17 @@ body {
     flex-direction: row-reverse; }
     .login .login-content {
       display: flex;
-      justify-content: center;
+      flex-direction: row;
+      align-items: center;
       justify-content: flex-end;
       background-color: #f2f2f2;
-      align-items: center;
       border-radius: 2.5%;
-      height: 580px;
-      width: 620px; }
+      width: 580px;
+      height: 620px; }
       .login .login-content .login-img img {
-        margin: 20px;
         width: 400px;
-        height: 400px; }
+        height: 400px;
+        margin: 20px; }
     .login .login-forms {
       width: 300px;
       margin-left: -9rem; } }

@@ -4,11 +4,9 @@
 @import "./mixin.scss";
 
 .login {
-  display: flex;
+  @include flex(flex, null, center, null);
   position: relative;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
+  @include width-height(100vw, 100vh);
   .login-forms {
     .login-registre {
       @extend .login-registre-create;
@@ -34,7 +32,6 @@
         }
       }
       div {
-        margin-bottom: 1.5rem;
         .login-account {
           color: rgba(0, 0, 0, 0.7);
           @extend .login-account-signin-signup;
@@ -78,11 +75,16 @@
         }
       }
       div.login-socail {
-        margin-top: 2rem;
+        @include margin-padding(ture, 1.5rem, null, null, null);
         .login-social-icon {
           font-size: 1.5rem;
-          color: $first-color-dark;
+          color: $first-color;
           margin: 0 1.5rem;
+        }
+        :active {
+          transition: 0.4s;
+          color: $first-color-dark;
+          transform: scale(1.5);
         }
       }
     }
@@ -92,30 +94,37 @@
 
 @media screen and (max-width: 1023px) {
   .login {
+    display: flex;
     flex-direction: column;
-    width: 100vw;
-    height: 100vh;
+    @include width-height(100%, 100%);
     .login-content {
-      margin-bottom: -5rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
+      @include margin-padding(
+        ture,
+        null,
+        null,
+        $responsive-magin-bottom-image,
+        null
+      );
+      @include flex(flex, null, center, center);
+      width: 70%;
       z-index: 0;
       .login-img {
         img {
-          width: 280px;
-          height: 280px;
+          @include width-height(280px, 280px);
         }
       }
     }
     .login-forms {
-      padding-bottom: 3.5rem;
+      @include margin-padding(
+        false,
+        null,
+        null,
+        $padding-responsive-form,
+        null
+      );
       z-index: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 350px;
+      @include flex(flex, null, center, center);
+      width: 70%;
     }
   }
 }
@@ -124,19 +133,14 @@
     justify-content: center;
     flex-direction: row-reverse;
     .login-content {
-      display: flex;
-      justify-content: center;
-      justify-content: flex-end;
+      @include flex(flex, row, center, flex-end);
       background-color: #f2f2f2;
-      align-items: center;
       border-radius: 2.5%;
-      height: 580px;
-      width: 620px;
+      @include width-height(580px, 620px);
       .login-img {
         img {
+          @include width-height(400px, 400px);
           margin: 20px;
-          width: 400px;
-          height: 400px;
         }
       }
     }
