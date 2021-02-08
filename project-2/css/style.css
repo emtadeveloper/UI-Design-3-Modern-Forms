@@ -1,15 +1,22 @@
 /*===== Colores =====*/
 /*===== Font and typography =====*/
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: IRANSans; }
+
 @font-face {
-  font-family: Vazir-Medium;
-  src: url(../fonts/Vazir-Bold.eot) format("eot"), url(../fonts/Vazir-Medium.woff) format("woff"), url(../fonts/Vazir-Medium.woff2) format("woff2");
+  font-family: IRANSans;
+  src: url("../fonts/IRANSans.ttf") format("ttf"), url("../fonts/IRANSansWeb.eot") format("eot"), url("../fonts/IRANSansWeb.woff") format("woff"), url("../fonts/IRANSansWeb.woff2") format("woff2");
   font-weight: 700;
   font-style: normal; }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: Vazir-Medium;
+  font-family: IRANSans;
   font-size: 0.938rem;
   color: #536dfe;
   box-sizing: border-box; }
@@ -72,7 +79,7 @@ body {
   width: 15%; }
 
 .login-input, .login .login-forms .login-registre .login-box .login-input, .login .login-forms .login-create .login-box .login-input {
-  font-family: Vazir-Medium;
+  font-family: IRANSans;
   border: none;
   outline: none;
   font-size: 0.938rem;

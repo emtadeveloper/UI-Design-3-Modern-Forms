@@ -5,21 +5,24 @@
   border-radius: 50%; }
 
 @font-face {
-  font-family: Vazir-Medium;
-  src: url(../fonts/Vazir-Bold.eot) format("eot"), url(../fonts/Vazir-Medium.woff) format("woff"), url(../fonts/Vazir-Medium.woff2) format("woff2");
+  font-family: IRANSans;
+  src: url("../fonts/IRANSans.ttf") format("ttf"), url("../fonts/IRANSansWeb.eot") format("eot"), url("../fonts/IRANSansWeb.woff") format("woff"), url("../fonts/IRANSansWeb.woff2") format("woff2");
   font-weight: 700;
   font-style: normal; }
 
-body, * {
+body,
+* {
   margin: 0;
   padding: 0;
-  font-family: Vazir-Medium;
+  font-family: IRANSans;
   color: #12192c;
   box-sizing: border-box;
   transition: 0.3s; }
-  body a, * a {
+  body a,
+  * a {
     text-decoration: none; }
-  body img, * img {
+  body img,
+  * img {
     display: block;
     max-width: 100%;
     height: auto; }
@@ -88,7 +91,7 @@ body, * {
             position: absolute;
             top: 0;
             right: 20px;
-            font-family: Vazir-Medium;
+            font-family: IRANSans;
             width: 80%;
             height: 100%;
             border: none;
@@ -118,7 +121,7 @@ body, * {
         .container .form .form-content .content-footer .form-forget:hover {
           color: #12192c; }
       .container .form .form-content .content-footer .form-button {
-        font-family: Vazir-Medium;
+        font-family: IRANSans;
         width: 100%;
         margin-bottom: 3rem;
         padding-top: 1rem;
